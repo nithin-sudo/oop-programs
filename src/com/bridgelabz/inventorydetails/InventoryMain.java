@@ -3,6 +3,10 @@ package com.bridgelabz.inventorydetails;
 import java.util.Scanner;
 
 public class InventoryMain {
+    /**
+     * asking user to enter their choice and calling methods accordingly.
+     * @param args
+     */
     public static void main(String[] args) {
         InventoryManagementInterface inventoryManagement =  new InventoryManagement();
         Scanner scanner = new Scanner(System.in);

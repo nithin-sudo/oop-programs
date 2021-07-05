@@ -5,6 +5,10 @@ public class Items {
     private double weightOfItem;
     private double priceOfItemPerKg;
 
+    /**
+     * generating getters and setters.
+     * @return
+     */
     public String getNameOfItem() {
         return nameOfItem;
     }

@@ -5,6 +5,10 @@ import java.util.LinkedList;
 public class InventoryManagement implements InventoryManagementInterface {
     LinkedList<Items> itemsLinkedList = new LinkedList<>();
 
+    /**
+     * adding the items to the linked list.
+     * @param items
+     */
     @Override
     public void addItem(Items items) {
         if(itemsLinkedList.contains(items))
@@ -18,6 +22,9 @@ public class InventoryManagement implements InventoryManagementInterface {
 
     }
 
+    /**
+     * displaying the items in the linked list.
+     */
     @Override
     public void displayItems() {
         for (Items item : itemsLinkedList)
@@ -26,6 +33,10 @@ public class InventoryManagement implements InventoryManagementInterface {
         }
     }
 
+    /**
+     * displaying the item by taking name from the user.
+     * @param nameOfItem
+     */
     @Override
     public void displayItemsByName(String nameOfItem) {
         for (Items item : itemsLinkedList)
@@ -38,6 +49,9 @@ public class InventoryManagement implements InventoryManagementInterface {
         }
     }
 
+    /**
+     * calculating the value of item.
+     */
     @Override
     public void calculateItemValue() {
         for(Items items : itemsLinkedList)
