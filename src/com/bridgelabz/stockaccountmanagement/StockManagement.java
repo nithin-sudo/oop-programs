@@ -19,6 +19,7 @@ public class StockManagement implements StockManagementInterface {
             stocksLinkedList.add(stocks);
         }
     }
+
     /**
      * displaying the stocks in the linked list
      */
@@ -41,8 +42,8 @@ public class StockManagement implements StockManagementInterface {
             double valueOfStock = stocks.getNumOfShare()*stocks.getSharePrice();
             System.out.println("value of stock "+stocks.getStockName()+"is "+valueOfStock);
             totalValueOfStock = totalValueOfStock +valueOfStock;
-            System.out.println("the total value of stocks is "+totalValueOfStock);
         }
+        System.out.println("the total value of stocks is "+totalValueOfStock);
     }
 
 }
